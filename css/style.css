@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    display: table;
+    width: 960px;
+    background-color: #404040;
+    background-image: url("../img/img.jpg");
+    overflow: hidden;
+    margin: 0 auto;
+}
+a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h2 {
+    color: #2c2c2c;
+}
+/* Styling Columns */
+#left, .devider, #right {
+    display: table-cell;
+}
+#left, #right {
+    text-align: center;
+}
+/* Styling forms */
+input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 4px;
+    transition: .2s all;
+}
+input:hover,
+input:focus{
+    background-color: #2c2c2c;
+    color: #fff;
+}
+button {
+    border: none;
+    font-size: 18px;
+    padding: 12px 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .2s all;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+button:hover {
+    background-color: #444;
+    color: #fff;
+}
+/* Styling Devider */
+.devider {
+    vertical-align: middle;
+    height: 18%;
+}
+#devider {
+    border: 2px solid #2c2c2c;
+    border-radius: 5px;
+    padding: 8px;
+}
+.devider {
+    position: relative;
+    color: #2c2c2c;
+}
+.devider::before {
+    content: "";
+    height: 41%;
+    width: 2px;
+    background-color: #2c2c2c;
+    position: absolute;
+    top: 0;
+    left: 21%;
+}
+.devider::after {
+    content: "";
+    height: 41%;
+    width: 2px;
+    background-color: #2c2c2c;
+    position: absolute;
+    bottom: 0;
+    left: 21%;
+}
